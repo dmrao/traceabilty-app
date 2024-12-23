@@ -12,19 +12,17 @@ public class TraceabilityService {
 
 
 private BugTraceabilityScanner bugTraceabilityScanner;
-private BugFixTraceabilityScanner bugFixTraceabilityScanner;
 // TODO - implement featureTraceabilityScanner
 //private TraceabilityScanner featureTraceabilityScanner;
 
 @Autowired
 public TraceabilityService(BugTraceabilityScanner bugTraceabilityScanner, BugFixTraceabilityScanner bugFixTraceabilityScanner) {
     this.bugTraceabilityScanner = bugTraceabilityScanner;
-    this.bugFixTraceabilityScanner = bugFixTraceabilityScanner;
 }
 
 public TracabilityResponse sacnforImplementations(String id) {
     // scans for occurance of a given bug ID 
-    return bugTraceabilityScanner.findImplementations(id);
+    return bugTraceabilityScanner.findOccurances(id);
 
     /*
      * TODO - Implement featureTraceabilityScanner

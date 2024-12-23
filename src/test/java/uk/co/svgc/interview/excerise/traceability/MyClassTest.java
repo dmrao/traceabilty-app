@@ -11,9 +11,6 @@ import uk.co.svgc.interview.excerise.traceability.model.Bug;
 import uk.co.svgc.interview.excerise.traceability.model.BugFix;
 import uk.co.svgc.interview.excerise.traceability.model.Feature;
 import uk.co.svgc.interview.excerise.traceability.model.FeatureScope;
-import uk.co.svgc.interview.excerise.traceability.model.RequirementLink;
-import uk.co.svgc.interview.excerise.traceability.model.RequirementMapping;
-import uk.co.svgc.interview.excerise.traceability.model.RequirementScope;
 
 public class MyClassTest {
 

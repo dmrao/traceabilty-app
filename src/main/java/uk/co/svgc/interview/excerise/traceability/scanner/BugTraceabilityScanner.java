@@ -12,7 +12,7 @@ import uk.co.svgc.interview.excerise.traceability.model.TracabilityResponse;
 @Component
 public class BugTraceabilityScanner implements TraceabilityScanner {
 
-    public TracabilityResponse findOccurance(String id) {
+    public TracabilityResponse findOccurances(String id) {
         TracabilityResponse response = new TracabilityResponse(id);
         try {
             List<Class<?>> classes = TraceabilityHelper.getAllClasses(BASE_PACKAGE);
@@ -36,8 +36,4 @@ public class BugTraceabilityScanner implements TraceabilityScanner {
         return response;
     }
 
-    public static void main(String[] args) {
-        BugTraceabilityScanner scanner = new BugTraceabilityScanner();
-        System.out.println(scanner.findImplementations("BUG_001"));
-    }
 }
